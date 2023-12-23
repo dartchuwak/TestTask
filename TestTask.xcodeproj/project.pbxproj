@@ -7,18 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30B0ED42B37151B000F62F4 /* OrderPayedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30B0ED32B37151B000F62F4 /* OrderPayedView.swift */; };
+		A30B0ED62B37197D000F62F4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30B0ED52B37197D000F62F4 /* Coordinator.swift */; };
+		A30B0ED82B371BFA000F62F4 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30B0ED72B371BFA000F62F4 /* CoordinatorView.swift */; };
+		A33DF78F2B324AC600CA4799 /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33DF78E2B324AC600CA4799 /* BookingView.swift */; };
 		A3A1CF622B30BF7000D0B4D2 /* TestTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A1CF612B30BF7000D0B4D2 /* TestTaskApp.swift */; };
-		A3A1CF642B30BF7000D0B4D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A1CF632B30BF7000D0B4D2 /* ContentView.swift */; };
+		A3A1CF642B30BF7000D0B4D2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A1CF632B30BF7000D0B4D2 /* MainView.swift */; };
 		A3A1CF662B30BF7000D0B4D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A1CF652B30BF7000D0B4D2 /* Assets.xcassets */; };
 		A3A1CF692B30BF7000D0B4D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A1CF682B30BF7000D0B4D2 /* Preview Assets.xcassets */; };
+		A3A1CF732B30CB1800D0B4D2 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A1CF722B30CB1800D0B4D2 /* TagView.swift */; };
+		A3A1CF752B31AA9300D0B4D2 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A1CF742B31AA9300D0B4D2 /* OptionsView.swift */; };
+		A3A1CF772B31B60C00D0B4D2 /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A1CF762B31B60C00D0B4D2 /* RoomView.swift */; };
+		A3A1CF792B31B63100D0B4D2 /* RoomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A1CF782B31B63100D0B4D2 /* RoomViewCell.swift */; };
+		A3A1CF7D2B31BB5700D0B4D2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A1CF7C2B31BB5700D0B4D2 /* NetworkService.swift */; };
+		A3A1CF7F2B31BC5100D0B4D2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A1CF7E2B31BC5100D0B4D2 /* ViewModel.swift */; };
+		A3A1CF812B31BD5C00D0B4D2 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A1CF802B31BD5C00D0B4D2 /* Endpoints.swift */; };
+		A3A1CF862B31BF4300D0B4D2 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A1CF852B31BF4300D0B4D2 /* Room.swift */; };
+		A3A1CF882B31C30600D0B4D2 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A1CF872B31C30600D0B4D2 /* Hotel.swift */; };
+		A3A1CF8B2B31C5D900D0B4D2 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = A3A1CF8A2B31C5D900D0B4D2 /* WrappingHStack */; };
+		A3BB51BB2B330A850020C770 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB51BA2B330A850020C770 /* Booking.swift */; };
+		A3BB51BD2B330F0E0020C770 /* TourDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB51BC2B330F0E0020C770 /* TourDetailsView.swift */; };
+		A3BB51C02B330FD50020C770 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BB51BF2B330FD50020C770 /* MockData.swift */; };
+		A3C61D752B337BE900ED6F32 /* PhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C61D742B337BE900ED6F32 /* PhoneTextField.swift */; };
+		A3C61D772B34665C00ED6F32 /* Tourist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C61D762B34665C00ED6F32 /* Tourist.swift */; };
+		A3C61D792B346B2600ED6F32 /* AddTouristView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C61D782B346B2600ED6F32 /* AddTouristView.swift */; };
+		A3C61D7B2B34721D00ED6F32 /* CostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C61D7A2B34721D00ED6F32 /* CostView.swift */; };
+		A3C61D7D2B349F2000ED6F32 /* EmailTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C61D7C2B349F2000ED6F32 /* EmailTextFieldView.swift */; };
+		A3C61D7F2B34A61000ED6F32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C61D7E2B34A61000ED6F32 /* Extensions.swift */; };
+		A3D4C0E42B3331CA004C2972 /* TouristView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D4C0E32B3331CA004C2972 /* TouristView.swift */; };
+		A3D4C0E82B3336DD004C2972 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D4C0E72B3336DD004C2972 /* TextFieldView.swift */; };
+		A3D4C0EB2B335899004C2972 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = A3D4C0EA2B335899004C2972 /* iPhoneNumberField */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A30B0ED32B37151B000F62F4 /* OrderPayedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPayedView.swift; sourceTree = "<group>"; };
+		A30B0ED52B37197D000F62F4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A30B0ED72B371BFA000F62F4 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		A33DF78E2B324AC600CA4799 /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
 		A3A1CF5E2B30BF7000D0B4D2 /* TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3A1CF612B30BF7000D0B4D2 /* TestTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTaskApp.swift; sourceTree = "<group>"; };
-		A3A1CF632B30BF7000D0B4D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A3A1CF632B30BF7000D0B4D2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A3A1CF652B30BF7000D0B4D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3A1CF682B30BF7000D0B4D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A3A1CF722B30CB1800D0B4D2 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		A3A1CF742B31AA9300D0B4D2 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		A3A1CF762B31B60C00D0B4D2 /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
+		A3A1CF782B31B63100D0B4D2 /* RoomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomViewCell.swift; sourceTree = "<group>"; };
+		A3A1CF7C2B31BB5700D0B4D2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A3A1CF7E2B31BC5100D0B4D2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A3A1CF802B31BD5C00D0B4D2 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		A3A1CF852B31BF4300D0B4D2 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		A3A1CF872B31C30600D0B4D2 /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		A3BB51BA2B330A850020C770 /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		A3BB51BC2B330F0E0020C770 /* TourDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDetailsView.swift; sourceTree = "<group>"; };
+		A3BB51BF2B330FD50020C770 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		A3C61D742B337BE900ED6F32 /* PhoneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneTextField.swift; sourceTree = "<group>"; };
+		A3C61D762B34665C00ED6F32 /* Tourist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tourist.swift; sourceTree = "<group>"; };
+		A3C61D782B346B2600ED6F32 /* AddTouristView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTouristView.swift; sourceTree = "<group>"; };
+		A3C61D7A2B34721D00ED6F32 /* CostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostView.swift; sourceTree = "<group>"; };
+		A3C61D7C2B349F2000ED6F32 /* EmailTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextFieldView.swift; sourceTree = "<group>"; };
+		A3C61D7E2B34A61000ED6F32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A3D4C0E32B3331CA004C2972 /* TouristView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristView.swift; sourceTree = "<group>"; };
+		A3D4C0E72B3336DD004C2972 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +76,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A1CF8B2B31C5D900D0B4D2 /* WrappingHStack in Frameworks */,
+				A3D4C0EB2B335899004C2972 /* iPhoneNumberField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A30B0ED02B3714A1000F62F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3A1CF762B31B60C00D0B4D2 /* RoomView.swift */,
+				A3A1CF782B31B63100D0B4D2 /* RoomViewCell.swift */,
+				A33DF78E2B324AC600CA4799 /* BookingView.swift */,
+				A3A1CF632B30BF7000D0B4D2 /* MainView.swift */,
+				A30B0ED32B37151B000F62F4 /* OrderPayedView.swift */,
+				A30B0ED72B371BFA000F62F4 /* CoordinatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A30B0ED12B3714A9000F62F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A3A1CF7E2B31BC5100D0B4D2 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A30B0ED22B3714C0000F62F4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A3A1CF612B30BF7000D0B4D2 /* TestTaskApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		A3A1CF552B30BF7000D0B4D2 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +132,15 @@
 		A3A1CF602B30BF7000D0B4D2 /* TestTask */ = {
 			isa = PBXGroup;
 			children = (
-				A3A1CF612B30BF7000D0B4D2 /* TestTaskApp.swift */,
-				A3A1CF632B30BF7000D0B4D2 /* ContentView.swift */,
+				A30B0ED22B3714C0000F62F4 /* App */,
+				A3A1CF7A2B31BB4200D0B4D2 /* Services */,
+				A30B0ED12B3714A9000F62F4 /* ViewModel */,
+				A30B0ED02B3714A1000F62F4 /* Views */,
+				A3BB51BE2B330FC80020C770 /* Helpers */,
+				A3A1CF842B31BF3B00D0B4D2 /* Model */,
 				A3A1CF652B30BF7000D0B4D2 /* Assets.xcassets */,
 				A3A1CF672B30BF7000D0B4D2 /* Preview Content */,
+				A3A1CF6F2B30CAFC00D0B4D2 /* Components */,
 			);
 			path = TestTask;
 			sourceTree = "<group>";
@@ -65,6 +151,60 @@
 				A3A1CF682B30BF7000D0B4D2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A3A1CF6F2B30CAFC00D0B4D2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A3A1CF722B30CB1800D0B4D2 /* TagView.swift */,
+				A3A1CF742B31AA9300D0B4D2 /* OptionsView.swift */,
+				A3BB51BC2B330F0E0020C770 /* TourDetailsView.swift */,
+				A3D4C0E32B3331CA004C2972 /* TouristView.swift */,
+				A3D4C0E72B3336DD004C2972 /* TextFieldView.swift */,
+				A3C61D742B337BE900ED6F32 /* PhoneTextField.swift */,
+				A3C61D782B346B2600ED6F32 /* AddTouristView.swift */,
+				A3C61D7A2B34721D00ED6F32 /* CostView.swift */,
+				A3C61D7C2B349F2000ED6F32 /* EmailTextFieldView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A3A1CF7A2B31BB4200D0B4D2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A3A1CF7B2B31BB4A00D0B4D2 /* NetworkService */,
+				A30B0ED52B37197D000F62F4 /* Coordinator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A3A1CF7B2B31BB4A00D0B4D2 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				A3A1CF7C2B31BB5700D0B4D2 /* NetworkService.swift */,
+				A3A1CF802B31BD5C00D0B4D2 /* Endpoints.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		A3A1CF842B31BF3B00D0B4D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3A1CF852B31BF4300D0B4D2 /* Room.swift */,
+				A3A1CF872B31C30600D0B4D2 /* Hotel.swift */,
+				A3BB51BA2B330A850020C770 /* Booking.swift */,
+				A3C61D762B34665C00ED6F32 /* Tourist.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3BB51BE2B330FC80020C770 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A3BB51BF2B330FD50020C770 /* MockData.swift */,
+				A3C61D7E2B34A61000ED6F32 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +223,10 @@
 			dependencies = (
 			);
 			name = TestTask;
+			packageProductDependencies = (
+				A3A1CF8A2B31C5D900D0B4D2 /* WrappingHStack */,
+				A3D4C0EA2B335899004C2972 /* iPhoneNumberField */,
+			);
 			productName = TestTask;
 			productReference = A3A1CF5E2B30BF7000D0B4D2 /* TestTask.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +255,10 @@
 				Base,
 			);
 			mainGroup = A3A1CF552B30BF7000D0B4D2;
+			packageReferences = (
+				A3A1CF892B31C5D900D0B4D2 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+				A3D4C0E92B335899004C2972 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
+			);
 			productRefGroup = A3A1CF5F2B30BF7000D0B4D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +285,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3A1CF642B30BF7000D0B4D2 /* ContentView.swift in Sources */,
+				A3A1CF642B30BF7000D0B4D2 /* MainView.swift in Sources */,
+				A3D4C0E82B3336DD004C2972 /* TextFieldView.swift in Sources */,
 				A3A1CF622B30BF7000D0B4D2 /* TestTaskApp.swift in Sources */,
+				A3A1CF772B31B60C00D0B4D2 /* RoomView.swift in Sources */,
+				A3D4C0E42B3331CA004C2972 /* TouristView.swift in Sources */,
+				A3C61D792B346B2600ED6F32 /* AddTouristView.swift in Sources */,
+				A3A1CF732B30CB1800D0B4D2 /* TagView.swift in Sources */,
+				A3C61D7D2B349F2000ED6F32 /* EmailTextFieldView.swift in Sources */,
+				A3C61D752B337BE900ED6F32 /* PhoneTextField.swift in Sources */,
+				A30B0ED82B371BFA000F62F4 /* CoordinatorView.swift in Sources */,
+				A3A1CF752B31AA9300D0B4D2 /* OptionsView.swift in Sources */,
+				A3C61D772B34665C00ED6F32 /* Tourist.swift in Sources */,
+				A3C61D7B2B34721D00ED6F32 /* CostView.swift in Sources */,
+				A33DF78F2B324AC600CA4799 /* BookingView.swift in Sources */,
+				A3A1CF792B31B63100D0B4D2 /* RoomViewCell.swift in Sources */,
+				A3A1CF882B31C30600D0B4D2 /* Hotel.swift in Sources */,
+				A3A1CF7F2B31BC5100D0B4D2 /* ViewModel.swift in Sources */,
+				A3BB51BB2B330A850020C770 /* Booking.swift in Sources */,
+				A3A1CF812B31BD5C00D0B4D2 /* Endpoints.swift in Sources */,
+				A3C61D7F2B34A61000ED6F32 /* Extensions.swift in Sources */,
+				A3A1CF7D2B31BB5700D0B4D2 /* NetworkService.swift in Sources */,
+				A3BB51C02B330FD50020C770 /* MockData.swift in Sources */,
+				A3BB51BD2B330F0E0020C770 /* TourDetailsView.swift in Sources */,
+				A30B0ED62B37197D000F62F4 /* Coordinator.swift in Sources */,
+				A30B0ED42B37151B000F62F4 /* OrderPayedView.swift in Sources */,
+				A3A1CF862B31BF4300D0B4D2 /* Room.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +516,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3A1CF892B31C5D900D0B4D2 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.11;
+			};
+		};
+		A3D4C0E92B335899004C2972 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MojtabaHs/iPhoneNumberField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3A1CF8A2B31C5D900D0B4D2 /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3A1CF892B31C5D900D0B4D2 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+		A3D4C0EA2B335899004C2972 /* iPhoneNumberField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3D4C0E92B335899004C2972 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;
+			productName = iPhoneNumberField;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A3A1CF562B30BF7000D0B4D2 /* Project object */;
 }
