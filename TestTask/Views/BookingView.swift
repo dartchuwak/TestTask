@@ -56,8 +56,8 @@ struct BookingView: View {
 
 
                     }
-                    .padding(16) // Добавляем горизонтальные отступы
-                    .frame(maxWidth: .infinity, alignment: .leading) // Растягиваем на всю ширину
+                    .padding(16) 
+                    .frame(maxWidth: .infinity, alignment: .leading)
                     .background(.white)
                     .cornerRadius(15)
 

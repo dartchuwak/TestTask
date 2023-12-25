@@ -37,29 +37,16 @@ struct TouristView: View {
             .padding(.bottom, !isToogle ? 12 : 0)
             if !isToogle {
                 TextFieldView(text: $tourist.name, placeholder: "Имя", isValid: $tourist.isNameValid)
-//                    .onChange(of: tourist.name) { oldValue, newValue in
-//                            tourist.isNameValid = true
-//                    }
+
                 TextFieldView(text: $tourist.surname, placeholder: "Фамилия", isValid: $tourist.isSurnameValid)
-//                    .onChange(of: tourist.surname) { oldValue, newValue in
-//                        tourist.isSurnameValid = !newValue.isEmpty
-//                    }
+
                 TextFieldView(text: $tourist.birthDate, placeholder: "Дата рождения", isValid: $tourist.isBirthdateValid)
-//                    .onChange(of: tourist.birthDate) { oldValue, newValue in
-//                        tourist.isBirthdateValid = !newValue.isEmpty
-//                    }
+
                 TextFieldView(text: $tourist.citezenship, placeholder: "Гражданство", isValid: $tourist.isCitezenshipValid)
-//                    .onChange(of: tourist.citezenship) { oldValue, newValue in
-//                        tourist.isNameValid = !newValue.isEmpty
-//                    }
+
                 TextFieldView(text: $tourist.passportNumber, placeholder: "Номер загранпаспорта", isValid: $tourist.isPassportNumberValid)
-//                    .onChange(of: tourist.name) { oldValue, newValue in
-//                        tourist.isNameValid = !newValue.isEmpty
-//                    }
+
                 TextFieldView(text: $tourist.passportValidDate, placeholder: "Срок действия загранпаспорта", isValid: $tourist.isPassportValidDateValid)
-//                    .onChange(of: tourist.name) { oldValue, newValue in
-//                        tourist.isNameValid = !newValue.isEmpty
-//                    }
             }
         }
     }
