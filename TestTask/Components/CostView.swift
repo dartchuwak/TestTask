@@ -18,7 +18,7 @@ struct CostView: View {
                 .font(Font.custom("SF Pro Display", size: 16))
                 .foregroundColor(Color(red: 0.51, green: 0.53, blue: 0.59))
             Spacer()
-            Text("\(String(value * touristsCount)) ₽")
+            Text("\((value * touristsCount).formattedWithSeparator) ₽")
                 .font(.system(size: 16))
                 .fontWeight(isTotal ? .semibold : .regular)
                 .multilineTextAlignment(.trailing)
@@ -30,3 +30,4 @@ struct CostView: View {
 #Preview {
     CostView(touristsCount: 1, text: "Тур", value: 16800, isTotal: true)
 }
+

@@ -43,9 +43,13 @@ class Coordinator: ObservableObject {
             case .root:
                 MainView()
             case .room:
-                RoomView(rooms: viewModel.rooms, title: "OrderPayedView")
+                RoomView(rooms: viewModel.rooms, title: viewModel.hotel?.name ?? "Hotel")
             case .booking:
-                BookingView(bookingDetails: viewModel.booking!)
+                if let booking = viewModel.booking {
+                    BookingView(bookingDetails: booking)
+                } else {
+                    ProgressView()
+                }
             case .pay:
                 OrderPayedView()
             }

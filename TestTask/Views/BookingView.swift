@@ -190,5 +190,5 @@ struct BookingView: View {
 }
 
 #Preview {
-    BookingView(bookingDetails: MockBooking.booking)
+    BookingView(bookingDetails: MockData.booking)
 }

@@ -17,11 +17,8 @@ struct RoomViewCell: View {
     var body: some View {
         VStack(alignment: .center) {
             VStack(alignment: .leading) {
-                Image("room")
-                    .resizable()
+                PageView(images:  room.imageUrls)
                     .frame(height: 257)
-                    .scaledToFill()
-
                     .clipShape(RoundedRectangle(cornerRadius: 15))
                     .padding(.top, 16)
 
@@ -31,7 +28,10 @@ struct RoomViewCell: View {
 
                 WrappingHStack(room.peculiarities, id: \.self) { item in
                     TagView(text: item)
+                        .padding(.bottom, 8)
                 }
+                .padding(.bottom, -8)
+
                 HStack {
                     Text("Подробнее о номере")
                         .font(.system(size: 16, weight: .medium))
@@ -54,13 +54,16 @@ struct RoomViewCell: View {
             }
 
             Button(action: {
+                Task {
+                    await viewModel.fetchBookingData()
+                }
                 coordinator.push(view: .booking)
             }, label: {
                 Text("Выбрать номер")
                     .font(.system(size: 16, weight: .medium))
-                  .kerning(0.1)
-                  .multilineTextAlignment(.center)
-                  .foregroundColor(.white)
+                    .kerning(0.1)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
 
             })
             .padding(.vertical, 15)
@@ -75,6 +78,5 @@ struct RoomViewCell: View {
 }
 
 #Preview {
-    RoomViewCell(room: Room(id: 1, name: "", price: 1, pricePer: "", peculiarities: [], imageUrls: []))
-        .environmentObject(ViewModel(networkService: NetworkService()))
+    RoomViewCell(room: MockData.room)
 }

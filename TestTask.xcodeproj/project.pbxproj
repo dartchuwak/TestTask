@@ -34,6 +34,8 @@
 		A3C61D7B2B34721D00ED6F32 /* CostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C61D7A2B34721D00ED6F32 /* CostView.swift */; };
 		A3C61D7D2B349F2000ED6F32 /* EmailTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C61D7C2B349F2000ED6F32 /* EmailTextFieldView.swift */; };
 		A3C61D7F2B34A61000ED6F32 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C61D7E2B34A61000ED6F32 /* Extensions.swift */; };
+		A3C78F9F2B39A0DC00A3186E /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C78F9E2B39A0DC00A3186E /* PageView.swift */; };
+		A3C78FA12B39A8F300A3186E /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C78FA02B39A8F300A3186E /* PageControl.swift */; };
 		A3D4C0E42B3331CA004C2972 /* TouristView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D4C0E32B3331CA004C2972 /* TouristView.swift */; };
 		A3D4C0E82B3336DD004C2972 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D4C0E72B3336DD004C2972 /* TextFieldView.swift */; };
 		A3D4C0EB2B335899004C2972 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = A3D4C0EA2B335899004C2972 /* iPhoneNumberField */; };
@@ -67,6 +69,8 @@
 		A3C61D7A2B34721D00ED6F32 /* CostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CostView.swift; sourceTree = "<group>"; };
 		A3C61D7C2B349F2000ED6F32 /* EmailTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailTextFieldView.swift; sourceTree = "<group>"; };
 		A3C61D7E2B34A61000ED6F32 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A3C78F9E2B39A0DC00A3186E /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		A3C78FA02B39A8F300A3186E /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		A3D4C0E32B3331CA004C2972 /* TouristView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouristView.swift; sourceTree = "<group>"; };
 		A3D4C0E72B3336DD004C2972 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,13 +138,13 @@
 			children = (
 				A30B0ED22B3714C0000F62F4 /* App */,
 				A3A1CF7A2B31BB4200D0B4D2 /* Services */,
+				A3A1CF6F2B30CAFC00D0B4D2 /* Components */,
 				A30B0ED12B3714A9000F62F4 /* ViewModel */,
 				A30B0ED02B3714A1000F62F4 /* Views */,
 				A3BB51BE2B330FC80020C770 /* Helpers */,
 				A3A1CF842B31BF3B00D0B4D2 /* Model */,
 				A3A1CF652B30BF7000D0B4D2 /* Assets.xcassets */,
 				A3A1CF672B30BF7000D0B4D2 /* Preview Content */,
-				A3A1CF6F2B30CAFC00D0B4D2 /* Components */,
 			);
 			path = TestTask;
 			sourceTree = "<group>";
@@ -165,6 +169,8 @@
 				A3C61D782B346B2600ED6F32 /* AddTouristView.swift */,
 				A3C61D7A2B34721D00ED6F32 /* CostView.swift */,
 				A3C61D7C2B349F2000ED6F32 /* EmailTextFieldView.swift */,
+				A3C78F9E2B39A0DC00A3186E /* PageView.swift */,
+				A3C78FA02B39A8F300A3186E /* PageControl.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -292,6 +298,7 @@
 				A3D4C0E42B3331CA004C2972 /* TouristView.swift in Sources */,
 				A3C61D792B346B2600ED6F32 /* AddTouristView.swift in Sources */,
 				A3A1CF732B30CB1800D0B4D2 /* TagView.swift in Sources */,
+				A3C78F9F2B39A0DC00A3186E /* PageView.swift in Sources */,
 				A3C61D7D2B349F2000ED6F32 /* EmailTextFieldView.swift in Sources */,
 				A3C61D752B337BE900ED6F32 /* PhoneTextField.swift in Sources */,
 				A30B0ED82B371BFA000F62F4 /* CoordinatorView.swift in Sources */,
@@ -306,6 +313,7 @@
 				A3A1CF812B31BD5C00D0B4D2 /* Endpoints.swift in Sources */,
 				A3C61D7F2B34A61000ED6F32 /* Extensions.swift in Sources */,
 				A3A1CF7D2B31BB5700D0B4D2 /* NetworkService.swift in Sources */,
+				A3C78FA12B39A8F300A3186E /* PageControl.swift in Sources */,
 				A3BB51C02B330FD50020C770 /* MockData.swift in Sources */,
 				A3BB51BD2B330F0E0020C770 /* TourDetailsView.swift in Sources */,
 				A30B0ED62B37197D000F62F4 /* Coordinator.swift in Sources */,

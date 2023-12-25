@@ -14,7 +14,11 @@ final class ViewModel: ObservableObject {
     @Published var hotel: Hotel?
     @Published var rooms: [Room] = []
     @Published var booking: Booking?
-    
+    @Published var tourPrice: Int = 0
+    @Published var fuelCharge: Int = 0
+    @Published var serviceCharge: Int = 0
+    @Published var totalPrice: Int = 0
+
     init(networkService: NetworkServiceProtocol) {
         self.networkService = networkService
     }
