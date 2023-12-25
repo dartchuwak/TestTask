@@ -10,7 +10,7 @@ import SwiftUI
 
 final class ViewModel: ObservableObject {
 
-    var networkService: NetworkServiceProtocol?
+    var networkService: NetworkServiceProtocol
     @Published var hotel: Hotel?
     @Published var rooms: [Room] = []
     @Published var booking: Booking?
@@ -18,6 +18,8 @@ final class ViewModel: ObservableObject {
     @Published var fuelCharge: Int = 0
     @Published var serviceCharge: Int = 0
     @Published var totalPrice: Int = 0
+    @Published var isError: Bool = false
+    @Published var errorMessage: String = ""
 
     init(networkService: NetworkServiceProtocol) {
         self.networkService = networkService
@@ -25,36 +27,40 @@ final class ViewModel: ObservableObject {
 
     func fetchHotelData() async {
         do {
-            guard let data =  try await networkService?.getData(url: Endpoints.hotel) else { return }
+            let data =  try await networkService.getData(url: Endpoints.hotel)
             let hotel = try JSONDecoder().decode(Hotel.self, from: data)
             await MainActor.run {
                 self.hotel = hotel
             }
         } catch {
+            errorMessage = error.localizedDescription
+            isError.toggle()
         }
     }
 
     func fetchRoomData() async {
         do {
-            guard let data = try await networkService?.getData(url: Endpoints.room)  else { return }
+            let data = try await networkService.getData(url: Endpoints.room)
             let rooms = try JSONDecoder().decode(Rooms.self, from: data)
             await MainActor.run {
                 self.rooms = rooms.rooms
             }
         } catch {
-            print (error)
+            errorMessage = error.localizedDescription
+            isError.toggle()
         }
     }
 
     func fetchBookingData() async {
         do {
-            guard let data = try await networkService?.getData(url: Endpoints.booking)  else { return }
+            let data = try await networkService.getData(url: Endpoints.booking)
             let booking = try JSONDecoder().decode(Booking.self, from: data)
             await MainActor.run {
                 self.booking = booking
             }
         } catch {
-
+            errorMessage = error.localizedDescription
+            isError.toggle()
         }
     }
 }

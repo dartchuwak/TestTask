@@ -38,7 +38,6 @@
 		A3C78FA12B39A8F300A3186E /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C78FA02B39A8F300A3186E /* PageControl.swift */; };
 		A3D4C0E42B3331CA004C2972 /* TouristView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D4C0E32B3331CA004C2972 /* TouristView.swift */; };
 		A3D4C0E82B3336DD004C2972 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D4C0E72B3336DD004C2972 /* TextFieldView.swift */; };
-		A3D4C0EB2B335899004C2972 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = A3D4C0EA2B335899004C2972 /* iPhoneNumberField */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,7 +80,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3A1CF8B2B31C5D900D0B4D2 /* WrappingHStack in Frameworks */,
-				A3D4C0EB2B335899004C2972 /* iPhoneNumberField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +229,6 @@
 			name = TestTask;
 			packageProductDependencies = (
 				A3A1CF8A2B31C5D900D0B4D2 /* WrappingHStack */,
-				A3D4C0EA2B335899004C2972 /* iPhoneNumberField */,
 			);
 			productName = TestTask;
 			productReference = A3A1CF5E2B30BF7000D0B4D2 /* TestTask.app */;
@@ -263,7 +260,6 @@
 			mainGroup = A3A1CF552B30BF7000D0B4D2;
 			packageReferences = (
 				A3A1CF892B31C5D900D0B4D2 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
-				A3D4C0E92B335899004C2972 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
 			);
 			productRefGroup = A3A1CF5F2B30BF7000D0B4D2 /* Products */;
 			projectDirPath = "";
@@ -534,14 +530,6 @@
 				minimumVersion = 2.2.11;
 			};
 		};
-		A3D4C0E92B335899004C2972 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/MojtabaHs/iPhoneNumberField.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.10.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -549,11 +537,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A3A1CF892B31C5D900D0B4D2 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
 			productName = WrappingHStack;
-		};
-		A3D4C0EA2B335899004C2972 /* iPhoneNumberField */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A3D4C0E92B335899004C2972 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;
-			productName = iPhoneNumberField;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -16,17 +16,7 @@ final class NetworkService: NetworkServiceProtocol {
     func getData(url: String) async throws  -> Data {
         do {
             guard let url = URL(string: url) else { throw Errors.invalidURL}
-            let (data, response) = try await URLSession.shared.data(from: url)
-            return data
-        } catch {
-            throw error
-        }
-    }
-
-    func loadImageData(url: String) async throws -> Data {
-        do {
-            guard let url = URL(string: url) else { throw Errors.invalidURL}
-            let (data, response) = try await URLSession.shared.data(from: url)
+            let (data, _) = try await URLSession.shared.data(from: url)
             return data
         } catch {
             throw error
